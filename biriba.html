@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+
+    <link rel="stylesheet" href="style(p1).css">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <div  id="BiribaBackground">
+    <a href="index(p1).html" class="back-link">← Home</a>
+     <div id="BiribaStack">
+        <a href="biriba7.html">
+            <img src="visuals/cardSeven.png" alt="cardSeven" id="cardSeven">
+        </a>
+
+        <a href="biriba6.html">
+             <img src="visuals/cardSix.png" alt="cardSix" id="cardSix">
+        </a>
+
+        <a href="biriba5.html">
+            <img src="visuals/cardFive.png" alt="cardFive" id="cardFive">
+        </a>
+
+        <a href="biriba4.html">
+             <img src="visuals/cardFour.png" alt="cardFour" id="cardFour">
+        </a>
+
+        <a href="biriba3.html">
+          <img src="visuals/cardThree.png" alt="cardThree" id="cardThree">
+        </a>
+
+        <a href="biriba2.html">
+            <img src="visuals/cardTwo.png" alt="cardTwo" id="cardTwo">
+        </a>
+     
+        <a href="biribaA.html">
+             <img src="visuals/cardAce.png" alt="cardAce" id="cardAce">
+        </a>
+       
+     </div>
+    
+     <h1>iro's dod.gr</h1>
+     <img src="visuals/bluelogo.png" alt="AnthosLogo" id="AnthosLogo">
+     <!-- <h2 id="pickcard">Pick a card and unlock a memory...</h2> -->
+     <h2 id="Youdid" > You did a Biriba that's 100 points!</h2>
+
+   <img src="visuals/speakerRED.png" alt="speaker" id="speaker" style="cursor:pointer;">
+    <audio id="homeAudio" src="visuals/tzitzikiaAudio.m4a" loop></audio>
+
+    <script>
+        const speaker = document.getElementById('speaker');
+        const audio = document.getElementById('homeAudio');
+        let isWhite = false;
+
+        speaker.addEventListener('click', function() {
+            if (isWhite) {
+                this.src = 'visuals/speakerRED.png';
+                audio.pause();
+                audio.currentTime = 0;
+            } else {
+                this.src = 'visuals/speaker.png';
+                audio.play();
+            }
+            isWhite = !isWhite;
+        });
+    </script>
+     
+ </div>
+
+<footer>
+    <p>Designed as a web art piece inspired by <strong>dod.gr</strong></p>
+  </footer>
+</body>
+
+</html>

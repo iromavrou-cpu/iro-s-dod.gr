@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>iro's dod- biriba-7</title>
+
+    <link rel="stylesheet" href="style(p1).css">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <div  id="BiribaBackground">
+
+    <a href="biriba.html" class="back-link"> ← My Biriba </a>
+    <h1>iro's dod.gr</h1>
+    <img src="visuals/bluelogo.png" alt="AnthosLogo" id="AnthosLogo">
+    <img src="visuals/DIMIDAD.JPG" alt="inesboat"class="biriba-card">
+ 
+
+    <img src="visuals/speaker.png" alt="speaker" id="speaker2" onclick="document.getElementById('taverna').play();">
+    <audio id="taverna" src="visuals/taverna.m4a" loop></audio>
+    <!-- <h2 id="Press">Press and hear <br> a Greek <br>TAVERNA</h2> -->
+    
+ </div>
+
+<img src="visuals/speakerRED.png" alt="speaker" id="speaker" style="cursor:pointer;">
+<audio id="homeAudio" src="visuals/tzitzikiaAudio.m4a" loop></audio>
+
+    <script>
+        const speaker = document.getElementById('speaker');
+        const audio = document.getElementById('homeAudio');
+        let isWhite = false;
+
+        speaker.addEventListener('click', function() {
+            if (isWhite) {
+                this.src = 'visuals/speakerRED.png';
+                audio.pause();
+                audio.currentTime = 0;
+            } else {
+                this.src = 'visuals/speaker.png';
+                audio.play();
+            }
+            isWhite = !isWhite;
+        });
+    </script>
+<footer>
+    <p>Designed as a web art piece inspired by <strong>dod.gr</strong></p>
+  </footer>
+</body>
+
+</html>
+

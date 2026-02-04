@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>iro's dod- Tichu-Dogs</title>
+
+    <link rel="stylesheet" href="style(p1).css">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <div  id="TichuBack">
+
+    <a href="mahjong.html" class="back-link"> ← Card Master </a>
+    <h1>iro's dod.gr</h1>
+    <img src="visuals/bluelogo.png" alt="AnthosLogo" id="AnthosLogo">
+    <img src="visuals/spykerkyra.jpg" alt="inesboat"class="biriba-card">
+ 
+
+    <!-- <img src="visuals/speaker.png" alt="speaker" id="speaker2" onclick="document.getElementById('fouskoto').play();">
+    <audio id="fouskoto" src="visuals/fouskotovideo.mov"loop></audio> -->
+
+    <h2 id="Press" style="position:absolute; top:47%; left: 76%; font-weight: 400; font-size: 1.5em;"
+        >The <strong><em>Dogs</em></strong>  are not about power or leading—they're about loyalty, trust, and quiet strength. 
+        This card does not win the game outright, but it teaches you the power of partnership. 
+        Having it in your hand feels like knowing you have a partner who always has your back, who trusts you, and who walks beside you through every twist and turn. 
+        In a relationship, it is that steady, loyal presence that makes the chaos feel safe and the journey feel shared. It is your soulmate.<br> <strong><span style="font-family: 'Lacquer';">Spy is my Dog.</span></strong>
+         </h2>
+    
+ </div>
+
+<img src="visuals/speakerRED.png" alt="speaker" id="speaker" style="cursor:pointer;">
+<audio id="homeAudio" src="visuals/tzitzikiaAudio.m4a" loop></audio>
+
+    <script>
+        const speaker = document.getElementById('speaker');
+        const audio = document.getElementById('homeAudio');
+        let isWhite = false;
+
+        speaker.addEventListener('click', function() {
+            if (isWhite) {
+                this.src = 'visuals/speakerRED.png';
+                audio.pause();
+                audio.currentTime = 0;
+            } else {
+                this.src = 'visuals/speaker.png';
+                audio.play();
+            }
+            isWhite = !isWhite;
+        });
+    </script>
+<footer>
+    <p>Designed as a web art piece inspired by <strong>dod.gr</strong></p>
+  </footer>
+</body>
+
+</html=

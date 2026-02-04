@@ -1,0 +1,411 @@
+
+html, body {
+    width:100%;
+}
+
+
+#HomeBack {
+    height: 100vh;
+    width: 100vw;
+    position:relative;
+    background-image: url("visuals/HomeBack.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+h1 {
+    font-family: 'Lacquer';
+    font-weight: 300;      
+    line-height: normal;      
+    letter-spacing: 2.0px;
+    color:white;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+}
+
+#BiribaStack {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:700px;
+    width:220px;
+}
+
+#TichuCards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:336px;
+    width:1200px;
+}
+
+#TichuCards img {
+    position: absolute;
+    height: 100%;
+    width: 19%;
+    border: 5px solid #1e90ff; 
+    border-radius: 25px;  
+
+}
+
+#dragon {
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+#dogs {
+    top: 0px;
+    left:950px;
+    z-index:2;
+}
+
+#finiki {
+    top: 0px;
+    left: 475px;
+    z-index:3;
+}
+
+#BiribaStack img {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    border: 5px solid #1e90ff; 
+    border-radius: 25px;  
+
+}
+
+#cardSeven{
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+#cardSix{
+    top: 80px;
+    left:0;
+    z-index:2;
+}
+
+#cardFive{
+    top:160px;
+    left:0;
+    z-index:3;
+}
+
+#cardFour{
+    top:240px;
+    left:0;
+    z-index:4;
+}
+
+#cardThree{
+    top:320px;
+    left:0;
+    z-index:5;
+}
+
+#cardTwo{
+    top:400px;
+    left:0;
+    z-index:6;
+}
+
+#cardAce{
+    top:460px;
+    left:0;
+    z-index:7;
+    rotate: 270deg;
+}
+
+#BiribaStack img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 24px rgba(30, 144, 255, 0.3);
+    border-color: #ffcc00;
+    cursor: pointer;
+}
+
+#TichuCards img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 24px rgba(30, 144, 255, 0.3);
+    border-color: #ffcc00;
+    cursor: pointer;
+}
+
+
+#bcard {
+    height: 336px;
+    width: 220px;
+    border: 5px solid #1e90ff; 
+    border-radius: 25px;    
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#tcard {
+    height: 336px;
+    width: 220px;
+    border: 5px solid #1e90ff; 
+    border-radius: 25px;    
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+#speaker {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 10%;
+    right: 5%; 
+    transform: translate(0, -50%);
+}
+
+#biriba, #tichu {
+    font-family: 'Lacquer';
+    font-weight: 700;      
+    line-height: normal;     
+    letter-spacing: 2.0px;
+    color:white;
+    position: absolute;
+    top: 80%;
+    font-size: 2em;
+}
+
+#dragonh2, #dogsh2, #finikih2, #CardMaster {
+    font-family: 'Lacquer';
+    font-weight: 700;      
+    line-height: normal;     
+    letter-spacing: 2.0px;
+    color:white;
+    position: absolute;
+    top: 67%;
+    font-size: 2em;
+    text-align: center;
+}
+
+#dragonh2 {
+  
+    left: 22%;
+    transform: translate(-50%, 0);
+}
+
+#dogsh2 {
+   
+    left:78%;
+    transform: translate(-50%, 0);
+}
+
+#finikih2 {
+    
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#CardMaster {
+    font-weight: 500; 
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: 'Montserrat';
+}
+
+
+#biriba {
+    top: calc(50% + 168px); 
+    left: 40%;
+    transform: translate(-50%, 0);
+    
+}
+
+#tichu {
+    top: calc(50% + 168px);
+    left: 60%;
+    transform: translate(-50%, 0);
+    /* font-family: 'DM Sans', serif;
+    font-weight: 700;   */
+}
+
+#BiribaBackground {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("visuals/BiribaBackround.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+footer {
+  background: #1e90ff;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.back-link {
+     position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #ffcc00;
+  font-weight: bold;
+  font-family: 'Lacquer';
+    font-weight: 700;  
+    font-size: 2em;
+}
+
+.back-link:hover {
+  text-decoration: none;
+    
+}
+
+#pickcard {
+    font-family: 'DM Sans', sans-serif;
+     font-weight: 700;      
+    line-height: normal;     
+    letter-spacing: 2.0px;
+    color:white;
+    position: absolute;
+    top: 40%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+#Youdid {
+    font-family: 'DM Sans', sans-serif;
+     font-weight: 500;      
+    line-height: normal;     
+    letter-spacing: 2.0px;
+    color:white;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+#bcard:hover, #tcard:hover {
+    transform: translate(-50%, -50%) scale(1.08);
+    box-shadow: 0px 8px 24px rgba(30, 144, 255, 0.3);
+    border-color: #ffcc00;
+    cursor: pointer;
+}
+
+#speaker:hover {
+    transform: translate(0, -50%) scale(1.1);
+    cursor: pointer;
+}
+
+#DadKatamaran {
+    height: 600px;
+    width: 400px;
+     border: 10px solid #1e90ff; 
+    border-radius: 25px;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#speaker2 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(0, -50%);
+    
+}
+
+#speaker2:hover {
+    transform: translate(0, -50%) scale(1.1);
+    cursor: pointer;
+}
+
+#Press {
+    font-family: 'Montserrat';
+     font-weight: 700;      
+    line-height: normal;     
+    letter-spacing: 2.0px;
+    color:white;
+    position: absolute;
+     top: 60%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+#dodLogo {
+    position: absolute;
+    height: 100px;
+    width: auto;
+    position: absolute;
+    top: 8.5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+     border: 5px solid #1e8fff00; 
+    border-radius: 70px;
+}
+
+#AnthosLogo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 8.5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #1e8fff00; 
+    border-radius: 50%;
+    object-fit: cover;  
+    object-position: center; 
+}
+
+.biriba-card {
+    height: 600px;
+    width: 400px;
+    border: 10px solid #1e90ff; 
+    border-radius: 25px;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.tichu-card {
+    height: 336px;
+    width: 220px;
+    border: 5px solid #1e90ff; 
+    border-radius: 25px;    
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#TichuBack {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("visuals/TichuBackground.jpeg");
+    background-size: cover;
+    background-position: center;
+}

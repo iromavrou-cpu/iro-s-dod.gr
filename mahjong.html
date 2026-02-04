@@ -1,0 +1,69 @@
+
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <title>iro's dod.gr</title>
+
+    <link rel="stylesheet" href="style(p1).css">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+ <div  id="TichuBack">
+        <a href="index(p1).html" class="back-link">← My Tichu</a>
+        <img src="visuals/bluelogo.png" alt="AnthosLogo" id="AnthosLogo">
+        <h1>iro's dod.gr</h1>
+
+        <h2 id="CardMaster">Wow you hold all the important figures! <br> You are the <strong>Cardmaster...</strong></h2>
+        <h2 id="dragonh2">The Dragon</h2>
+        <h2 id="finikih2">The Phoenix</h2>
+        <h2 id="dogsh2">The Dogs</h2>
+
+    <div id="TichuCards">
+            <a href="dragon.html">
+                <img src="visuals/dragon.jpg" alt="dragon" id="dragon">
+            </a>
+                <a href="dogs.html">
+                <img src="visuals/dogs.jpg" alt="dogs" id="dogs">
+            </a>
+            <a href="finiki.html">
+                <img src="visuals/finiki.jpg" alt="finiki" id="finiki">
+            </a>
+
+    </div>
+
+<img src="visuals/speakerRED.png" alt="speaker" id="speaker" style="cursor:pointer;">
+    <audio id="homeAudio" src="visuals/tzitzikiaAudio.m4a" loop></audio>
+
+    <script>
+        const speaker = document.getElementById('speaker');
+        const audio = document.getElementById('homeAudio');
+        let isWhite = false;
+
+        speaker.addEventListener('click', function() {
+            if (isWhite) {
+                this.src = 'visuals/speakerRED.png';
+                audio.pause();
+                audio.currentTime = 0;
+            } else {
+                this.src = 'visuals/speaker.png';
+                audio.play();
+            }
+            isWhite = !isWhite;
+        });
+    </script>
+
+ </div>
+
+
+
+<footer>
+    <p>Designed as a web art piece inspired by <strong>dod.gr</strong></p>
+  </footer>
+</body>
+
+</html>
